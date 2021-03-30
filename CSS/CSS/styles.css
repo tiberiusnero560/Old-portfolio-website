@@ -334,6 +334,30 @@ h3 {
   color: var(--clr-light);
   text-align: center;
 }
+@media (min-width: 1440px) {
+  .my-services {
+    background-repeat: no-repeat;
+    background-size: 105em 50em;
+  }
+}
+@media (min-width: 1024px) {
+  .my-services {
+    background-repeat: no-repeat;
+    background-size: 100% 50em;
+  }
+}
+@media (min-width: 768px) {
+  .my-services {
+    background-repeat: no-repeat;
+    background-size: 100% 50em;
+  }
+}
+@media (max-width: 767px) {
+  .my-services {
+    background-repeat: no-repeat;
+    background-size: 100% 50em;
+  }
+}
 
 .section__title--services {
   color: var(--clr-accent);
