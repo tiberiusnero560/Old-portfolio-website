@@ -456,16 +456,26 @@ h3 {
 .portfolio__item {
   background: var(--clr-accent);
   overflow: hidden;
+  margin-top: 200px;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+a {
+  color: white;
 }
 
 .portfolio__img {
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1) opacity 250ms linear;
-  padding: 0.2em;
   height: 20em;
 }
 
 .portfolio__img4 {
   height: 22em;
+}
+
+.port-item {
+  padding: 1em;
 }
 
 .portfolio__item:focus {
@@ -521,7 +531,7 @@ h3 {
   margin: 0 2em;
 }
 
-social-list__link {
+.social-list__link {
   padding: 0.5em;
 }
 
@@ -542,6 +552,25 @@ social-list__link {
   margin-right: auto;
   margin-left: auto;
 }
+
+.portfolio {
+  display: grid;
+  grid-template-columns: (4, 1fr);
+  grid-template-rows: (2, .5fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 11px;
+  border: 3px solid cyan;
+  
+}
+
+.port-item5 {
+  grid-column-start: -11;
+  padding: 1em;
+  
+}
+
+
+/*  Resume Styles   */
 
 .RESUME__job-container {
   text-align: center;
