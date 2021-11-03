@@ -83,6 +83,10 @@ h3 {
   font-size: var(--fs-h3);
 }
 
+p {
+  font-size: var(--fs-body);
+}
+
 .section__subtitle--intro,
 .section__subtitle--about {
   background: var(--clr-accent);
@@ -706,6 +710,12 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 2em;
+}
+
+.section__title--work {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+  margin-top: -1.2em;
 }
 
 /*# sourceMappingURL=styles.css.map */
