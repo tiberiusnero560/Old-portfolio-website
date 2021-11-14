@@ -31,13 +31,11 @@
     <body>
         <!-- Header -->
         <header>
-            <div class="logo">
-                <img src="/Assets/TFE Logo.jpg">
-            </div>
 
-            <button class="nav-toggle" aria-label="toggle navigation">
+
+            <!-- <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
-            </button>
+            </button> -->
 
             <nav class="nav">
                 <ul class="nav__list">
@@ -59,34 +57,36 @@
 
         <!-- Introduction Section -->
         <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi I am <strong>Kyle LeBlanc</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">Computer Science & CyberSecurity Student </p>
-            <img src="/Assets/kyle-nice-wedding-photo.jpg" class="intro__img">
+            <div class='intro__text--container'>
+                <h1 class="section__title section__title--intro">
+                    Hi I'm <strong>Kyle LeBlanc</strong>
+                </h1>
+                <p class="section__subtitle section__subtitle--intro">Self Taught Freelance Developer Attending Ryerson courses slowly</p>
+                <img src="/Assets/kyle-nice-wedding-photo.jpg" class="intro__img">
+            </div>
         </section>
 
         <!-- My Services Section -->
         <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">My Skills</h2>
+            <h2 class="section__title section__title--services">Skills (MERN Stack)</h2>
             <div class="services">
                     <div class="service">
-                        <h3>Web Development</h3>
-                        <p> 
+                        <h3 class='service__title'>Web Development</h3>
+                        <p class='service__text'> 
                             I decided to choose web development as a way to refine my learning to a narrow area to be able to be confident enough to begin the job search while continuing to learn new skills as I have been. I have the strongest foundation of knowledge in this sector, with excellent HTML & CSS skills (it's pretty easy) and an intermediate knowledge of javascript. Some experience with React.js & bootstrap but wanted to learn vanilla first
                         </p>
                     </div> <!-- <-- Closing tag for service class-->
 
                     <div class="service">
-                        <h3>Software Development</h3>
-                        <p>
+                        <h3 class='service__title'>Software Development</h3>
+                        <p class='service__text'>
                            Strong foundation of programming principles, data structures and algorithms. I have had time specifically learning <strong>C++, Python, Javascript and C#</strong> Some of these languages as you may know have similar syntax which makes it easier once you have the foundation of programming principles. Comfortable working with APIs and Databases. Strongest knowledge is with the MERN stack. 
                         </p>
                     </div> <!-- <-- Closing tag for service class-->
 
                     <div class="service">
-                        <h3>Penetration Testing</h3>
-                        <p>
+                        <h3 class='service__title'>Penetration Testing</h3>
+                        <p class='service__text'>
                             I have been learning the fundamentals of the Cyber Security field in recent months. I am not committing the same time as the others, but I believe it can be extremely valuable to have a background in security so that one can be mindful of security flaws and vulnerabilities while writing the code itself. Most vulnerabilities are implemented due to human errors in the code itself. I believe this can be a valuable asset.
                         </p>
                     </div> <!-- <-- Closing tag for service class-->
@@ -98,19 +98,24 @@
 
         <!-- About me section -->
         <section class="about-me" id="about">
-            <h2 class="section__title section__title--about" id="about-me">Who I am</h2>
+            <h2 class="section__title section__title--about" id="about-me">About Me</h2>
             <p class="section__subtitle section__subtitle--about">Ryerson University Computer Science Student</p>
 
             <div class="about-me__body">
-                <p>
+                <p class='about__me--body1'>
                     My name is Kyle LeBlanc and I have been a self taught developer currently living in Ottawa Ontario. I have been toying with the idea of becoming a developer for many years without a real commitment. I started college right out of high school for video game development but didn't complete it due to financial issues among others. To be completely honest, I wasn't ready right out of school I realize now. I have decided to return to school by taking online courses one at a time while working on the side, and building projects and the framework for my future businesses.
                 </p>
-                <p>
+                <p class='about__me--body2'>
                     I have completed CCPS109 Computer Science I in Python. I am preparing for a month or so before starting Discrete Math which will be difficult for me. Afterwards Computer Science II will be in Java. 
             </div>
-
-            <img src="/Assets/laptop01.jpg" class="about-me__img1">
-            <img src="/Assets/NSAMonitorsSetup.jpg" class="about-me__img2">
+            <div class='about__me--imgContainer'>
+                <img src="/Assets/laptop01.jpg" class="about-me__img1">
+            </div>
+            
+            <div class='about__me--imgContainer2'>
+                <img src="/Assets/NSAMonitorsSetup.jpg" class="about-me__img2">
+            </div>
+            
 
         </section>
         
@@ -157,19 +162,26 @@
                     </div>
 
                     <div class="portfolio-item portfolio-item-tall">
-                        <span class="span-text" style="text-align: center">Portfolio Website</span>
-                        <a href="/Portfolio.html">
-                            <img class="portfolio-img" src="/Assets/Port-website-full-screen 2.PNG">
+                        <span class="span-text" style="text-align: center">Ryerson CCPS109</span>
+                        <a href="/CCPS109.html">
+                            <img class="portfolio-img" src="Assets/Ryerson image.PNG">
                         </a>
-
                     </div>
                 </div>
         </section>
 
-        <section class='ClientSection'>
-            <div class='Client__Container'>
-                <div class='Client__grid'>
-                    <h2>My first client</h2>
+        <section class='clientSection'>
+            <div class='client__Container'>
+                <h1 class='section__title--client'>My Clients</h1>
+                <div class='client__grid'>
+                    <div class='client__item'>
+                        <img class='client__img' src='Assets/PFEBanner.png'>
+                    </div>
+
+                    <div class='client__item'>
+                        <img class='client__img' src='Assets/PFEBanner.png'>
+                    </div>
+
                 </div>
 
             </div>
