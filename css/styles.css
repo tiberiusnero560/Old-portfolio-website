@@ -1,13 +1,12 @@
 *,
-*::before *::after {
-  box-sizing: border-box; 
 
-}
 
 * {
   padding: 0;
   margin: 0;
 }
+
+
 
 body {
   margin: 0;
@@ -40,10 +39,22 @@ body {
 }
 
 section {
-  padding: 3em 3em; 
+  padding-left: 2em; 
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
+  font-size: 100%; 
+  font: inherit; 
+  vertical-align: baseline;
+}
 
 /*  Header Styles  */
 
@@ -105,6 +116,13 @@ section {
   color: white;
 }
 
+.section__title--services {
+  text-align: center;
+  margin-bottom: 1.5em;
+  margin-top: -0.5em;
+  color: white;
+}
+
 .section__title--client {
   text-align: center;
   margin-bottom: 1em;
@@ -144,33 +162,43 @@ section {
 
 
 
-/* My Services Section Styles */
+        /* My Services Section Styles */
 .my-services {
-  text-align: center;
   color: var(--clr-light);
   font-family: var(--ff-secondary);
   display: block;
   background-color: var(--clr-dark);
   width: 37vh;    /* The width of the Note 20 Ultra 412px */
+  margin-right: 0;
+  padding-right: 0;
 }
 .service__title {
   font-size: var(--fs-h3);
   margin-bottom: 0.5em;
   margin-top: 1em;
+  text-align: center;
 }
 .service__text {
   font-size: var(--fs-body);
   padding: 1em;
   margin: auto;
   display: block;
-  text-align: center;
   color: var(--clr-light);
   font-family: var(--ff-secondary);
+  text-justify: inter-word;
+  word-wrap: break-word;
+  max-width: 35vh;
+}
+
+.my-work__button, a {
+  text-align: center;
+  color: white;
+  font-weight: var(--fw-bold);
 }
 
 
 
-/*  About Me Section Styles  */
+        /*  About Me Section Styles  */
 
 .about__me--imgContainer {
   position: relative;
@@ -219,34 +247,43 @@ section {
 
 
 
-/*  My Work Section Styles */
+        /*  My Work Section Styles */
 .my-work {
   display: block;
   background-color: var(--clr-dark);
   max-width: 100%;
-  
-  
-
 }
 
-.portfolio {
-  display: grid;
-  height: 100%;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-  padding: 5px;
+.container {
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .portfolio-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 20px;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: "image image"
+                       "title icon" 
+                       "desc .";
+  -ms-flex-line-pack: start;
+  align-content: start;
+}
+
+
+
+.portfolio-list {
+  display: grid;
+  justify-content: space-evenly;
+  justify-items: start;
   text-align: center;
   align-items: center;
-  justify-content: center;
-  margin: 5px;
 }
 
 .portfolio-item-tall {
-  max-width: 40vh;
   align-self: center;
 }
 .portfolio__item--inner {
@@ -255,11 +292,14 @@ section {
 
 .portfolio-img {
   max-width: 100%;
-  min-width: 30vh;
   height: 18rem;
   background-position: stretch;
-  
   border: 2px solid cyan;
+
+}
+
+.portfolio-img:hover {
+  border: 4px solid yellow;
 }
 
 .span-text {
@@ -267,16 +307,24 @@ section {
   display: none;
   align-items: center;
   position: absolute;
+  
+
+  
+  background-color: #111;
 }
 
-.portfoli-item:hover .span-text {
-  display: block;
+.span-text:hover {
+  background-color: red;
+}
+
+.portfolio-a:hover .span-text {
+  display: inline-block;
   background-color: black;
+  text-align: center;
 }
 
 
-
-/*  Footer Section Styles  */
+        /*  Footer Section Styles  */
 .footer {
   background: #111;
   color: var(--clr-accent);
@@ -285,11 +333,9 @@ section {
   font-size: var(--fs-h3);
 }
 
-
 .footer__link {
   font-weight: var(--fw-bold);
 }
-
 
 .footer a {
   color: inherit;
@@ -304,8 +350,6 @@ section {
 .footer__link:hover {
   text-decoration: none;
 }
-
-
 
 .social-list {
   list-style: none;
@@ -324,7 +368,7 @@ section {
 }
 
 
-/* Client / Freelance Section Styles */
+        /* Client / Freelance Section Styles */
 .clientSection {
   border: 2px solid blue;
   background-color: #eeeeee;
@@ -346,7 +390,26 @@ section {
   padding: 1em;
 }
 
+.hire__container { 
+  text-align: center;
+  margin-top: 2em;
+}
 
+.hire__button {
+  background-color: var(--clr-accent);
+  color: var(--clr-light);
+  font-weight: var(--fw-bold);
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.hire__container a {
+  
+  text-decoration: none;
+}
 
 
 /* Subpages styles */
@@ -354,4 +417,5 @@ section {
 
 
 
+/* Media Queries  */
 

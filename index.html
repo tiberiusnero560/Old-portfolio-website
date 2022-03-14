@@ -3,27 +3,26 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Portfolio Site</title>
         <meta name="description" content="Portfolio site">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/styles.css">
-
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
         <script src="https://kit.fontawesome.com/41ba69b621.js" crossorigin="anonymous"></script>
         <script src="/Scripts/gtag.js"></script>
         <script src="/Scripts/index.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65954170-2""></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65954170-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65954170-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-        gtag('config', 'UA-65954170-2');
-    </script>
+            gtag('config', 'UA-65954170-2');
+        </script>
 
 
 
@@ -68,31 +67,33 @@
 
         <!-- My Services Section -->
         <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">Skills (MERN Stack)</h2>
+            <h2 class="section__title section__title--services">Skills <br>(MERN Stack)</h2>
             <div class="services">
                     <div class="service">
                         <h3 class='service__title'>Web Development</h3>
                         <p class='service__text'> 
-                            I decided to choose web development as a way to refine my learning to a narrow area to be able to be confident enough to begin the job search while continuing to learn new skills as I have been. I have the strongest foundation of knowledge in this sector, with excellent HTML & CSS skills (it's pretty easy) and an intermediate knowledge of javascript. Some experience with React.js & bootstrap but wanted to learn vanilla first
+                            Web development is my strongest skill that I have spent the most time and focus on. I knew I needed to have one area to focus on first and then begin to branch out. I have experience with HTML, CSS, and JavaScript. I have also worked with React, Node, Express and MongoDB to come together to form the MERN tech stack for which I specialize in at this time. 
                         </p>
                     </div> <!-- <-- Closing tag for service class-->
 
                     <div class="service">
-                        <h3 class='service__title'>Software Development</h3>
+                        <h3 class='service__title'>React Native <br> (Cross-Platform Apps)</h3>
                         <p class='service__text'>
-                           Strong foundation of programming principles, data structures and algorithms. I have had time specifically learning <strong>C++, Python, Javascript and C#</strong> Some of these languages as you may know have similar syntax which makes it easier once you have the foundation of programming principles. Comfortable working with APIs and Databases. Strongest knowledge is with the MERN stack. 
+                          React native's motto is 'Learn once, write anywhere.' It can be used to create applications for Android, Android TV, iOS, macOS, tvOS, Web, and Windows. React Native is great for mobile apps and it provides a great smooth and responsive user interface while significantly reducing load times. It's also much cheaper to build apps in React Native as opposed to Native apps for each platform without the need to compromise on quality and functionality. The similarities between these 2 allow me to quickly learn React Natives slight differences and make a quick transition to React Native which I am doing now. This will allow me to expand my skillset and value in the marketplace even further to app development for clients and the community.
                         </p>
                     </div> <!-- <-- Closing tag for service class-->
 
                     <div class="service">
-                        <h3 class='service__title'>Penetration Testing</h3>
+                        <h3 class='service__title'>Cybersecurity</h3>
                         <p class='service__text'>
                             I have been learning the fundamentals of the Cyber Security field in recent months. I am not committing the same time as the others, but I believe it can be extremely valuable to have a background in security so that one can be mindful of security flaws and vulnerabilities while writing the code itself. Most vulnerabilities are implemented due to human errors in the code itself. I believe this can be a valuable asset.
                         </p>
                     </div> <!-- <-- Closing tag for service class-->
             </div> <!-- Closing tag for services class  (container) -->
 
-            <a href="#my-work" class="btn">work</a>
+            <div class='my-work__button'>
+                <a href="#my-work" class="btn">work</a>
+            </div>
         </section>
 
 
@@ -103,7 +104,7 @@
 
             <div class="about-me__body">
                 <p class='about__me--body1'>
-                    My name is Kyle LeBlanc and I have been a self taught developer currently living in Ottawa Ontario. I have been toying with the idea of becoming a developer for many years without a real commitment. I started college right out of high school for video game development but didn't complete it due to financial issues among others. To be completely honest, I wasn't ready right out of school I realize now. I have decided to return to school by taking online courses one at a time while working on the side, and building projects and the framework for my future businesses.
+                    My name is Kyle LeBlanc. I am a self taught developer currently living in Canada. I have started taking online classes at Ryerson University one course at a time for Computer Science while working full time. I have been teaching myself to code for almost 4 years now and the University is mainly for credibility so others can take me seriously at this time. I have every intention of getting a PHD in Computer Science in the future. However I don't intend to wait to work in the industry that I love and enjoy so much.
                 </p>
                 <p class='about__me--body2'>
                     I have completed CCPS109 Computer Science I in Python. I am preparing for a month or so before starting Discrete Math which will be difficult for me. Afterwards Computer Science II will be in Java. 
@@ -121,49 +122,49 @@
         
 
         <!-- My Work -->
-        <section class="my-work main-content" id="my-work">
+        <section class="my-work content container" id="my-work">
             <h2 class="section__title section__title--work">My Work</h2>
             <p class="section__subtitle section__subtitle--work">A Showcase of my work so far</p>
 
-                <div class="portfolio">
+                <div class="portfolio-list">
                     <div class="portfolio-item portfolio-item-medium2">
-                        <span class="span-text" style="text-align: center">AI Chatbot (In Development)</span>
-                        <a href="/Chatbot.html">
-                            <img class="portfolio-img"  src="/Assets/chatbot.jpg">
+                        <a  class='portfolio-a' href="/Chatbot.html">
+                            <span title='Ai Chatbot' class="span-text" >AI Chatbot (In Development)</span>
+                            <img class="portfolio-img" width='1150' height='750' src="/Assets/chatbot.jpg">
                         </a>
                     </div>
 
                     <div class="portfolio-item portfolio-item-large">
-                        <span class="span-text" style="text-align: center">Google Clone</span>
-                        <a href="/Google-Clone.html">
-                            <img class="portfolio-img" src="Assets/Google-clone-Screenshot1.PNG">
+                        <a class='portfolio-a' href="/Google-Clone.html">
+                            <span class="span-text" style="text-align: center">Google Clone</span>
+                            <img class="portfolio-img" width='1150' height='750' src="Assets/Google-clone-Screenshot1.PNG">
                         </a>
                     </div>
 
                     <div class="portfolio-item portfolio-item-medium">
-                        <span class="span-text" style="text-align: center">Press For Earth</span>
-                        <a href="/PressForEarth.html">
+                        <a class='portfolio-a' width='1150' height='750' href="/PressForEarth.html">
+                            <span class="span-text" style="text-align: center">Press For Earth</span>
                             <img class="portfolio-img" src="/Assets/PFEBanner.png">
                         </a>
                     </div>
 
                     <div class="portfolio-item portfolio-item-small">
-                        <span class="span-text" style="text-align: center">Tech For Earth</span>
-                        <a href="/TechForEarth.html">
+                        <a class='portfolio-a' width='1150' height='750' href="/TechForEarth.html">
+                            <span class="span-text" style="text-align: center">Tech For Earth</span>
                             <img class="portfolio-img" src="/Assets/TFEBanner.jpg">
                         </a>
                     </div>
 
                     <div class="portfolio-item portfolio-item-wide">
-                        <span class="span-text" style="text-align: center">Ryerson CCPS109</span>
-                        <a href="/CCPS109.html">
+                        <a class='portfolio-a' width='1150' height='750' href="/CCPS109.html">
+                            <span class="span-text" style="text-align: center">Ryerson CCPS109</span>
                             <img class="portfolio-img" src="Assets/Ryerson image.PNG">
                         </a>
                     </div>
 
                     <div class="portfolio-item portfolio-item-tall">
-                        <span class="span-text" style="text-align: center">Ryerson CCPS109</span>
-                        <a href="/CCPS109.html">
+                        <a class='portfolio-a' width='1150' height='750' href="/CCPS109.html">
+                            <span class="span-text" style="text-align: center">Ryerson CCPS109</span>
                             <img class="portfolio-img" src="Assets/Ryerson image.PNG">
                         </a>
                     </div>
@@ -182,6 +183,12 @@
                         <img class='client__img' src='Assets/PFEBanner.png'>
                     </div>
 
+                </div>
+
+                <div class='hire__container'>
+                    <button type='button' class='hire__button'> 
+                        <a href='#contact'>Hire Me</a>
+                    </button>
                 </div>
 
             </div>
