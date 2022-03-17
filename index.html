@@ -14,6 +14,10 @@
         <script src="/Scripts/index.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65954170-2""></script>
 
+        <link rel="stylesheet" href="./css/MobileStyles.css">
+        <link rel="stylesheet" href="./css/TabletStyles.css">        
+        <link rel="stylesheet" href="./css/DesktopStyles.css">
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65954170-2"></script>
         <script>
@@ -28,41 +32,22 @@
 
     </head>
     <body>
-        <!-- Header -->
-        <header>
-
-
-            <!-- <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button> -->
-
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">About Me</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#services" class="nav__link">Services</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#my-work" class="nav__link">My work</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <!-- Header --> -->
+        
 
         <!-- Introduction Section -->
-        <section class="intro" id="home">
-            <div class='intro__text--container'>
-                <h1 class="section__title section__title--intro">
-                    Hi I'm <strong>Kyle LeBlanc</strong>
-                </h1>
-                <p class="section__subtitle section__subtitle--intro">Self Taught Freelance Developer Attending Ryerson courses slowly</p>
-                <img src="/Assets/kyle-nice-wedding-photo.jpg" class="intro__img">
+        <section class="intro" id="hero">
+            <div>
+                <h1>Hi, I'm <span>Kelsey</span></h1>
+                <h2>I'm a <span>web developer</span> and <span>designer</span> based in <span>London</span>.</h2>
+                <p>I'm a creative and passionate person who loves to create and build things. I'm currently working on my portfolio site, and I'm looking for new opportunities to learn and grow.</p>
+                <a href="#about" class="button">About Me</a>
+                
             </div>
+               
+
+           
+
         </section>
 
         <!-- My Services Section -->
@@ -109,12 +94,16 @@
                 <p class='about__me--body2'>
                     I have completed CCPS109 Computer Science I in Python. I am preparing for a month or so before starting Discrete Math which will be difficult for me. Afterwards Computer Science II will be in Java. 
             </div>
-            <div class='about__me--imgContainer'>
-                <img src="/Assets/laptop01.jpg" class="about-me__img1">
+
+            <div class="about__me--gridContainer">
+                <div class='about__me--imgContainer'>
+                    <img src="/Assets/laptop01.jpg" class="about-me__img1">
+                </div>
+                
+                <div class='about__me--imgContainer2'>
+                    <img src="/Assets/NSAMonitorsSetup.jpg" class="about-me__img2">
             </div>
-            
-            <div class='about__me--imgContainer2'>
-                <img src="/Assets/NSAMonitorsSetup.jpg" class="about-me__img2">
+
             </div>
             
 
@@ -163,8 +152,13 @@
                     </div>
 
                     <div class="portfolio-item portfolio-item-tall">
+<<<<<<< Updated upstream
                         <a class='portfolio-a' width='1150' height='750' href="/CCPS109.html">
                             <span class="span-text" style="text-align: center">Ryerson CCPS109</span>
+=======
+                        <span class="span-text" >Ryerson CCPS109</span>
+                        <a href="/CCPS109.html">
+>>>>>>> Stashed changes
                             <img class="portfolio-img" src="Assets/Ryerson image.PNG">
                         </a>
                     </div>
@@ -198,8 +192,9 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <a href="mailto:kyle.leblanc88@gmail.com" class="footer__link">Kyle.LeBlanc88@gmail.com </a>
+          
             <ul class="social-list">
+            
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://www.github.com">
                         <i class="fab fa-github"></i>
@@ -208,6 +203,11 @@
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://twitter.com/KyleLeBlancVlog">
                         <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:kyle.leblanc88@gmail.com?subject=" class="footer__link" class="contact-button">
+                        <button class="contact-button">Contact</button>
                     </a>
                 </li>
                 <li class="social-list__item">

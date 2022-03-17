@@ -1,0 +1,320 @@
+
+
+/* Homepage (index.html) Styles for mobile */
+@media (min-width: 479px) {
+
+    html {
+        box-sizing: border-box;
+        padding: 0;
+        background-color: azure
+    }
+
+    
+/* Introduction Section Styles  */
+    .intro__img {
+        width: 100%;
+        height: auto;
+    }
+
+
+   .hero {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+    }
+
+    #hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../Assets/Backgrounds/Black-gradient-background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        filter: brightness(60%);
+    }
+
+    .hero-content__titles {
+        text-align: center;
+        z-index: 10;
+        color: white;
+        height: 5vh;
+        grid-column: 3 / 5;
+        grid-row: 3 ;
+    }
+
+    .hero-content__title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-right: 0.5em;
+    }
+
+    .hero-content__name {
+        color: cyan;
+        font-weight: bolder;
+        font-style: italic;
+    }
+
+   .hero-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .hero-content__subtitle {
+        font-size: 1rem;
+    }
+
+
+    .hero-text {
+        text-align: center;
+        color: white;
+        z-index: 10;
+        font-size: 1.2rem;
+        grid-column: 3 / 5;
+        grid-row: 4 / 5;
+        width: 30vh;
+        margin-right: 1em;
+        }   
+        
+    
+
+
+        .hero-signature {
+            text-align: center;
+            color: white;
+            z-index: 10;
+            font-size: 0.6rem;
+            grid-column: 1;
+            grid-row: 1;
+            margin-right: 1em;
+            font-style: italic;
+        }
+  
+
+
+
+
+
+    /*  My Services Section (Skills section) Styles   */
+        #services {
+            padding: 1em;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            background-color: #0f1217;
+        }
+
+        .section__title {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 3em;
+            color: white;
+        }
+
+        .service__title {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 2.5em;
+            color: white;
+        }
+
+        .service__text {
+            color: white;
+        }
+
+
+
+
+
+
+    /*  About Me Section Styles   */
+    #about {
+        background-color: #0f1217;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        margin-top: 8em;
+    }
+
+    .about__me--gridContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10*px;
+        grid-row-gap: 0px;
+    }
+
+    .about__me--imgContainer {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .about__me--imgContainer2 {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-me__img1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-me__img2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about__me--body1 {
+        color: white;
+    }
+
+     .about__me--body2 {
+        color: white;
+    }
+
+
+
+
+    /*  My work Section Styles   */
+
+    #my-work {
+        background-color: #0f1217;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        margin-top: 8em;
+    }
+
+    .section__title {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 3em;
+        color: white;
+    }
+
+    .section__subtitle {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 3em;
+        color: white;
+    }
+
+
+    .portfolio-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .portfolio-item {
+        margin: 2em;
+        
+    }
+
+    .span-text {
+        color: white;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+
+
+
+    /* Clients Section  */
+
+    .clientSection {
+        background-color: #0f1217;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        margin-top: 8em;
+    }
+
+    .client__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10*px;
+        grid-row-gap: 0px;
+    }
+
+    .client__img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    /* Footer Styles  */
+   
+    
+
+    .footer > a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer li > a {
+        color: black;
+        text-decoration: none;
+        padding: 1em;
+        
+        
+    }
+
+    .footer > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: cyan;
+    }
+
+    .social-list {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1em;
+        padding: 1em;
+    }
+
+    .social-list__item {
+        color: white;
+        list-style-type: none;
+    }
+
+    .contact-button {
+        background-color: #0f1217;
+        color: white;
+        text-decoration: none;
+        padding: 0.5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .contact-button:hover {
+        background-color: #005effc9;
+        border: 2px solid white;
+        text-decoration: none;
+        padding: 0.5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .button-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: yellow;
+    }
+
+}
