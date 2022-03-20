@@ -485,7 +485,7 @@
 
 @media (min-width: 1920px) {
     .services {
-        padding: 10% 15% 3% 15%;
+        padding: 6% 15% 3% 15%;
         grid-gap: 80px;
         grid-row-gap: 150px;
         text-align: center;
@@ -495,16 +495,15 @@
         padding: 0;
         margin: 0;
         text-align: center;
-        position: rel;
-        display: block;
+        grid-column: 2;
+        
     }
 
     .section__title {
-        border-bottom: 2px solid cyan;
-        grid-column: 2;
-        width: 50%;
+        width: 100%;
         text-align: center;
-        margin: 0;
+        margin-top: 8%;
+        padding: 0;
     }
 
     .section__title--services {
