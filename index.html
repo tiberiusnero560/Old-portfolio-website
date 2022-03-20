@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="./css/MobileStyles.css">
         <link rel="stylesheet" href="./css/TabletStyles.css">        
         <link rel="stylesheet" href="./css/DesktopStyles.css">
+        <link rel="stylesheet" href="./css/styles.css">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65954170-2"></script>
@@ -36,48 +37,52 @@
         
 
         <!-- Introduction Section -->
-        <section class="intro" id="hero">
-            <div>
-                <h1>Hi, I'm <span>Kelsey</span></h1>
-                <h2>I'm a <span>web developer</span> and <span>designer</span> based in <span>London</span>.</h2>
-                <p>I'm a creative and passionate person who loves to create and build things. I'm currently working on my portfolio site, and I'm looking for new opportunities to learn and grow.</p>
-                <a href="#about" class="button">About Me</a>
-                
+        <section class="intro" id="intro">
+            <div id="hero">
+                <div class="intro--content__container">
+                    <h1 class="intro__h1">Hi, I'm <span>Kyle</span></h1>
+                    <h2 class="intro__h2">I'm a <span>web developer</span> and <span>designer</span></h2>
+                    <p class="intro--body">I'm a creative and passionate person who loves to create and build things. I'm currently working on my portfolio site, and I'm looking for new opportunities to learn and grow.</p>
+                    <a href="#about" class="button">About Me</a>
+                    
+                </div>
             </div>
-               
 
-           
+        </section> 
 
-        </section>
+
+
 
         <!-- My Services Section -->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">Skills <br>(MERN Stack)</h2>
+        <section class="my-services" id="my-services">
+            <div class="container">
+                <h2 class="section__title section__title--services">Skills <br>(MERN Stack)</h2>
+            </div>
             <div class="services">
-                    <div class="service">
+                    <div class="service service__1">
                         <h3 class='service__title'>Web Development</h3>
                         <p class='service__text'> 
-                            Web development is my strongest skill that I have spent the most time and focus on. I knew I needed to have one area to focus on first and then begin to branch out. I have experience with HTML, CSS, and JavaScript. I have also worked with React, Node, Express and MongoDB to come together to form the MERN tech stack for which I specialize in at this time. 
+                            Website development such as portfolio site, blog, and e-commerce site. I can take your idea and turn it into a reality. 
                         </p>
                     </div> <!-- <-- Closing tag for service class-->
 
-                    <div class="service">
-                        <h3 class='service__title'>React Native <br> (Cross-Platform Apps)</h3>
-                        <p class='service__text'>
-                          React native's motto is 'Learn once, write anywhere.' It can be used to create applications for Android, Android TV, iOS, macOS, tvOS, Web, and Windows. React Native is great for mobile apps and it provides a great smooth and responsive user interface while significantly reducing load times. It's also much cheaper to build apps in React Native as opposed to Native apps for each platform without the need to compromise on quality and functionality. The similarities between these 2 allow me to quickly learn React Natives slight differences and make a quick transition to React Native which I am doing now. This will allow me to expand my skillset and value in the marketplace even further to app development for clients and the community.
+                    <div class="service service__2" class="service__2">
+                        <h3 class='service__title'>Cross-Platform Apps</h3>
+                        <p class='service__text service-text2'>
+                            Cross-platform apps using React Native. That means io, Android and Web Apps with a single maintainable codebase. Flutter is similar but my focus has been React.
                         </p>
                     </div> <!-- <-- Closing tag for service class-->
 
-                    <div class="service">
-                        <h3 class='service__title'>Cybersecurity</h3>
+                    <div class="service service__3" class="service__3">
+                        <h3 class='service__title'>It Consulting </h3>
                         <p class='service__text'>
-                            I have been learning the fundamentals of the Cyber Security field in recent months. I am not committing the same time as the others, but I believe it can be extremely valuable to have a background in security so that one can be mindful of security flaws and vulnerabilities while writing the code itself. Most vulnerabilities are implemented due to human errors in the code itself. I believe this can be a valuable asset.
+                            I have been learning about the industry for about 5 years now. Teaching myself to program and design. I felt I needed a strong foundation before I began my career and looking for clients. 
                         </p>
                     </div> <!-- <-- Closing tag for service class-->
             </div> <!-- Closing tag for services class  (container) -->
 
             <div class='my-work__button'>
-                <a href="#my-work" class="btn">work</a>
+                <a href="#my-work" class="btn">My work</a>
             </div>
         </section>
 
@@ -118,54 +123,50 @@
                 <div class="portfolio-list">
                     <div class="portfolio-item portfolio-item-medium2">
                         <a  class='portfolio-a' href="/Chatbot.html">
-                            <span title='Ai Chatbot' class="span-text" >AI Chatbot (In Development)</span>
-                            <img class="portfolio-img" width='1150' height='750' src="/Assets/chatbot.jpg">
+                            <img class="portfolio-img" width='1150' height='750' src="/Assets/Backgrounds/LeBlancSoftwareSolutionsScreenshot.png">
                         </a>
+                        <span title='Ai Chatbot' class="span-text" >LeBlanc Software Solutions</span>
                     </div>
 
                     <div class="portfolio-item portfolio-item-large">
                         <a class='portfolio-a' href="/Google-Clone.html">
-                            <span class="span-text" style="text-align: center">Google Clone</span>
                             <img class="portfolio-img" width='1150' height='750' src="Assets/Google-clone-Screenshot1.PNG">
                         </a>
+                        <span class="span-text" style="text-align: center">Google Clone</span>
                     </div>
 
                     <div class="portfolio-item portfolio-item-medium">
                         <a class='portfolio-a' width='1150' height='750' href="/PressForEarth.html">
-                            <span class="span-text" style="text-align: center">Press For Earth</span>
                             <img class="portfolio-img" src="/Assets/PFEBanner.png">
                         </a>
+                        <span class="span-text" style="text-align: center">Press For Earth (Being Re-done)</span>
                     </div>
 
-                    <div class="portfolio-item portfolio-item-small">
-                        <a class='portfolio-a' width='1150' height='750' href="/TechForEarth.html">
-                            <span class="span-text" style="text-align: center">Tech For Earth</span>
-                            <img class="portfolio-img" src="/Assets/TFEBanner.jpg">
-                        </a>
-                    </div>
 
                     <div class="portfolio-item portfolio-item-wide">
                         <a class='portfolio-a' width='1150' height='750' href="/CCPS109.html">
-                            <span class="span-text" style="text-align: center">Ryerson CCPS109</span>
                             <img class="portfolio-img" src="Assets/Ryerson image.PNG">
                         </a>
+                        <span class="span-text" style="text-align: center">Ryerson CCPS109</span>
                     </div>
-
+                    
+                    <!-- For when i finish my next project. Quickly add here  -->
+                    <!-- 
                     <div class="portfolio-item portfolio-item-tall">
-<<<<<<< Updated upstream
                         <a class='portfolio-a' width='1150' height='750' href="/CCPS109.html">
-                            <span class="span-text" style="text-align: center">Ryerson CCPS109</span>
-=======
-                        <span class="span-text" >Ryerson CCPS109</span>
-                        <a href="/CCPS109.html">
->>>>>>> Stashed changes
                             <img class="portfolio-img" src="Assets/Ryerson image.PNG">
                         </a>
-                    </div>
+                        <span class="span-text" style="text-align: center">Ryerson CCPS109</span>
+                    </div> -->
+
+
                 </div>
         </section>
 
-        <section class='clientSection'>
+
+        <!--  For when i get my first clients  -->
+
+        <!-- <section class='clientSection' id="clients">
             <div class='client__Container'>
                 <h1 class='section__title--client'>My Clients</h1>
                 <div class='client__grid'>
@@ -179,15 +180,11 @@
 
                 </div>
 
-                <div class='hire__container'>
-                    <button type='button' class='hire__button'> 
-                        <a href='#contact'>Hire Me</a>
-                    </button>
-                </div>
+              
 
             </div>
 
-        </section>
+        </section> -->
 
 
         <!-- Footer -->
