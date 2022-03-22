@@ -1,0 +1,393 @@
+
+/* Homepage (index.html) Styles for mobile */
+@media (min-width: 479px) and (max-width: 1024px) {
+
+    
+    
+
+    /* ------------------------------ */
+    section {
+      background-color: #0f1217 !important;
+  }
+  
+
+    body {
+        padding: 0;
+        margin: 0;
+     
+    }
+
+    
+/* Introduction Section Styles  */
+    #intro {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+        background-image: url("../Assets/Backgrounds/Black-gradient-background.jpg");
+    }
+
+    #hero {
+      
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        
+        flex-direction: column;
+        text-align: center;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+    
+
+
+    }    
+
+    .intro--content__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+     
+    }
+
+    .intro__h1 {
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 5%;
+        margin: 0;
+        z-index: 1;
+    }
+
+    .intro__h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 5%;
+        margin: 0;
+        z-index: 1;
+    }
+
+    .intro--body {
+        font-size: 1rem;
+        padding: 5%;
+    }
+
+
+    
+
+
+
+
+    /*  My Services Section (Skills section) Styles   */
+    #my-services {
+        /* desktop styles with a grid layout */
+        
+        
+
+    }
+
+    .services {
+  
+        color: white;
+        padding: 10% 10% 2% 10%;
+    }
+
+    .section__title--services {
+        margin-top: 10%;
+       
+    }
+
+    .service__title {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .service__text {
+        font-size: 1rem;
+        text-align: left;
+        margin-bottom: 2em;
+    }
+
+    .my-work__button {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .btn {
+        background-color: #0f1217;
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 2em;
+        cursor: pointer;
+        text-align: center;
+        border-bottom: 2px solid cyan;
+
+    }
+
+    .service__1 {
+        grid-column: 1;
+    }
+
+
+    .service__2 {
+        grid-column: 2;
+    }
+
+    .service__3 {
+        grid-column: 3;
+    }
+    
+
+    
+
+
+
+
+
+
+    /*  About Me Section Styles   */
+    #about {
+        padding: 20% 20% 10% 20%;
+    }
+
+    .about__me--gridContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 30px;
+    }
+
+    .about__me--imgContainer {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        margin-right: 0;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .about__me--imgContainer2 {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-me__img1 {
+        width: 100%;
+        height: 80%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-me__img2 {
+        width: 100%;
+        height: 80%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about__me--body1 {
+        color: white;
+    }
+
+     .about__me--body2 {
+        color: white;
+    }
+
+    .button {
+        background-color: #0f1217;
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 2em;
+        cursor: pointer;
+        text-align: center;
+    }
+
+
+
+
+    /*  My work Section Styles   */
+
+    #my-work {
+        padding: 20% 20% 10% 20%;
+        margin-top: 2em;
+    }
+
+    .section__title {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 3em;
+        color: white;
+    }
+
+    .section__subtitle {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 3em;
+        color: white;
+    }
+
+
+    .portfolio-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .portfolio-item {
+        margin: 2em;
+        
+    }
+
+    .span-text {
+        color: white;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+
+
+
+    /* Clients Section  */
+
+    #clients {
+        padding: 10%;
+        margin-top: 8em;
+    }
+
+    .section__title--client {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1em;
+        color: white;
+    }
+
+    .clientSection {
+        padding-top: 10%;
+        padding-bottom: 10%;
+        margin-top: 8em;
+    }
+
+    .client__grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10*px;
+        grid-row-gap: 0px;
+    }
+
+    .client__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .client__item {
+        margin: 0.7em;
+    }
+
+
+
+    /* Footer Styles  */
+   
+    
+
+    .footer > a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer li > a {
+        color: black;
+        text-decoration: none;
+        padding: 1em;
+        
+        
+    }
+
+    .footer > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: cyan;
+    }
+
+    .social-list {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1em;
+        padding: 1em;
+    }
+
+    .social-list__item {
+        color: white;
+        list-style-type: none;
+    }
+
+    .contact-button {
+        background-color: #0f1217;
+        color: white;
+        text-decoration: none;
+        padding: 0.5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .contact-button:hover {
+        background-color: #005effc9;
+        border: 2px solid white;
+        text-decoration: none;
+        padding: 0.5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .button-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: yellow;
+    }
+
+}
